@@ -33,7 +33,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
         data["INSTALLMENT_PLANS"] = data["INSTALLMENT_PLANS"].replace(installment_map)
 
         sex_map = {'F': 0, 'M': 1}
-        property_map = {'UNKNOWN': 0, 'SAVINGS_INSURANCE': 1, 'REAL_ESTATE': 2, 'CAR_OTHER': 3}
+        property_map = {'UNKNOWN': 0, 'SAVINGS_INSURANCE': 1, 'REAL_ESTATE': 2, 'REAL_STATE': 2, 'CAR_OTHER': 3}
         housing_map = {'OWN': 1, 'RENT': 2, 'FREE': 3}
 
         data["SEX"] = data["SEX"].replace(sex_map)
